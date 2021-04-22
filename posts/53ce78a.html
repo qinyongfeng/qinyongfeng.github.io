@@ -908,7 +908,7 @@ tar -zxvf 程序包
 <p>调度器服务器地址配置（可配置多个，但只会向一个可通信地址发送）：</p>
 <p><code>serverip</code>：调度节点的ip地址</p>
 <p><code>serverport</code>：调度节点命令服务器端口 （默认端口57501）</p>
-<p><strong></strong></p><dir></dir>可配置多个扫描目录：<p></p>
+<p><strong>dir可配置多个扫描目录</strong>：</p>
 <p><code>path</code>：扫描目录 </p>
 <p><code>type</code>：文件类型。 0 – 标志文件。 1 – 数据文件 </p>
 <p><code>retry</code>：文件扫描次数。用于数据文件落地判断（文件大小不改变的次数）。 </p>
@@ -917,18 +917,17 @@ tar -zxvf 程序包
 <p><code>format</code>：使用日期宏[DATE]后替换的时间格式(YYYYMMDD,YYYY-MM-DD等) </p>
 <p><code>befordays</code>：当前日期向前计算几天</p>
 <p><code>afterdays</code>：当前日期向后计算几天 </p>
-<p><code>dir</code>实例模板</p>
-<pre class="line-numbers language-XML"><code class="language-XML"><dir>
-    <path>/opt/list/[DATE]/file<\path>
-    <type>0<\type>
-    <retry>3<\retry>
-    <subdir>1</subdir>
-    <regex>^.*?\.(py|txt)$</regex>
-    <format>YYYY-MM-DD<\format>
-    <befordays>3<\befordays>
-    <afterdays>4<\afterdays>
-<\dir><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="1-3、服务启停"><a href="#1-3、服务启停" class="headerlink" title="1.3、服务启停"></a>1.3、服务启停</h5><pre><code># 启动
+<p><strong>dir 实例模板</strong></p>
+<pre><code>&lt;dir&gt;
+    &lt;path&gt;/opt/list/[DATE]/file&lt;\path&gt;
+    &lt;type&gt;0&lt;\type&gt;
+    &lt;retry&gt;3&lt;\retry&gt;
+    &lt;subdir&gt;1&lt;/subdir&gt;
+    &lt;regex&gt;^.*?\.(py|txt)$&lt;/regex&gt;
+    &lt;format&gt;YYYY-MM-DD&lt;\format&gt;
+    &lt;befordays&gt;3&lt;\befordays&gt;
+    &lt;afterdays&gt;4&lt;\afterdays&gt;
+&lt;\dir&gt;</code></pre><h5 id="1-3、服务启停"><a href="#1-3、服务启停" class="headerlink" title="1.3、服务启停"></a>1.3、服务启停</h5><pre><code># 启动
 sh bin/startup.sh 
 # 停止
 sh bin/shutdown.sh</code></pre><script>
@@ -1834,8 +1833,8 @@ $(function () {
       app_id: "XXXXX"
     });
   daovoice('update');
-  </script>
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
         
 
-    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 </html>
