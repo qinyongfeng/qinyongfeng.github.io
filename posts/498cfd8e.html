@@ -916,14 +916,14 @@ public class ConcurrencyTest {
                 @Override
                 public void run() {
                       int a = 0;
-                      for (long i = 0; i < count; i++) {
+                      for (long i = 0; i &lt; count; i++) {
                                 a += 5;
                       }
                 }
               });
               thread.start();
               int b = 0;
-              for (long i = 0; i < count; i++) {
+              for (long i = 0; i &lt; count; i++) {
                         b--;
               }
               long time = System.currentTimeMillis() - start;
@@ -933,11 +933,11 @@ public class ConcurrencyTest {
     private static void serial() {
               long start = System.currentTimeMillis();
               int a = 0;
-              for (long i = 0; i < count; i++) {
+              for (long i = 0; i &lt; count; i++) {
                         a += 5;
               }
               int b = 0;
-              for (long i = 0; i < count; i++) {
+              for (long i = 0; i &lt; count; i++) {
                         b--;
               }
               long time = System.currentTimeMillis() - start;
@@ -969,7 +969,7 @@ serial<span class="token operator">:</span>0ms<span class="token punctuation">,<
 <h5 id="1-1-4-减少上下文切换实战"><a href="#1-1-4-减少上下文切换实战" class="headerlink" title="1.1.4 减少上下文切换实战"></a>1.1.4 减少上下文切换实战</h5><p>本节将通过减少线上大量WAITING的线程，来减少上下文切换次数。</p>
 <p><strong>第一步</strong>：用jstack命令dump线程信息，看看pid为3117的进程里的线程都在做什么。（不会使用<code>jstack</code>自行百度，jdk自带工具）</p>
 <p>生成dump文件</p>
-<pre class="line-numbers language-Linux"><code class="language-Linux">sudo -u admin /opt/ifeve/java/bin/jstack 31177 >/home/tengfei.fangtf/dump17<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-Linux"><code class="language-Linux">sudo -u admin /opt/ifeve/java/bin/jstack 31177 &gt;/home/tengfei.fangtf/dump17<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>第二步</strong>：统计所有线程分别处于什么状态，发现300多个线程处于<code>WAITING</code>（onobject-monitor）状态。</p>
 <pre class="line-numbers language-Linux"><code class="language-Linux">grep java.lang.Thread.State dump17 | awk '{print $2$3$4$5}' | sort | uniq -c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>结果：</p>
@@ -1964,5 +1964,5 @@ $(function () {
   </script>
         
 
-    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/chitose.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/chitose.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>
