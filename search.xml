@@ -31,6 +31,31 @@
     
     
     <entry>
+      <title>比较好用的google访问插件</title>
+      <link href="/posts/3976414e.html"/>
+      <url>/posts/3976414e.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本方法只适用于安装chrome浏览器或基于chromium内核的浏览器（如Crypto Tab浏览器，kiwi浏览器），因为要装浏览器插件。</p></blockquote><hr><h4 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h4><p><strong>1.<a href="https://iguge.app/" target="_blank" rel="noopener">下载</a> iGG离线安装器，得到一个zip包</strong><br><strong>2.打开chrome的扩展程序管理页面，启用开发者模式</strong><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513105452.webp" alt=""><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513105451.webp" alt=""><br><strong>3.将下载的zip包拖进这个页面内，即可完成安装”iGG离线安装器”</strong><br><strong>4.如下图所示，去安装iGG谷歌访问助手</strong><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513105450.webp" alt=""><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513105725.webp" alt=""><br><strong>5.稍等一会，当出现这个图标即代表安装完成，点击这个图标即可开启谷歌访问助手功能，可畅游谷歌的各种服务</strong><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513105923.webp" alt=""><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513105924.webp" alt=""><br><strong>6.访问<a href="https://www.google.com/验证是否成功（此时可选择卸载iGG离线安装器）" target="_blank" rel="noopener">https://www.google.com/验证是否成功（此时可选择卸载iGG离线安装器）</a></strong><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210513110620.png" alt="效果图"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> google </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java基础知识面试题</title>
       <link href="/posts/96741f70.html"/>
       <url>/posts/96741f70.html</url>
@@ -191,6 +216,33 @@
     
     
     <entry>
+      <title>Hexo之渲染绕过</title>
+      <link href="/posts/17fd92ae.html"/>
+      <url>/posts/17fd92ae.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-1-Hexo-渲染"><a href="#1-1-Hexo-渲染" class="headerlink" title="1.1 Hexo 渲染"></a>1.1 Hexo 渲染</h3><p>  在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染是非常必要的。</p><h3 id="1-2-方法一：font-matter"><a href="#1-2-方法一：font-matter" class="headerlink" title="1.2 方法一：font matter"></a>1.2 方法一：font matter</h3><p><code>Hexo</code>新建网站页面，然后将你的代码直接写入 <code>index.md</code> 中</p><p>在 <code>Front matter</code> 中添加 <code>layout: false</code>，此方法适用于单一的纯<code>HTML</code><br><code>CSS</code> 页面。</p><pre class="line-numbers language-bash"><code class="language-bash">---title: toolsdate: 2020-04-28 00:00:00type: <span class="token string">"tools"</span>layout: <span class="token boolean">false</span>---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="1-3-方法二：skip-render"><a href="#1-3-方法二：skip-render" class="headerlink" title="1.3 方法二：skip render"></a>1.3 方法二：skip render</h3><p>在博客根目录下的 <code>_config.yml</code>，找到 <code>skip_render</code>，大概在32行左右，写入你想要的跳过渲染的路径，注意缩进和空格。</p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 指定目录跳过hexo渲染</span>skip_render:  - <span class="token string">'tools/*'</span>  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>注释：<code>tools/*</code> 表示在目录 <code>source/fireworks</code> 下的文件全部跳过渲染，<code>tools/**</code> 表示在博客根目录 <code>source/tools/</code> 文件夹下的文件全部跳过渲染（例如页面的 js、css 在另一个文件夹中）。</p></blockquote><h3 id="1-4-案例：webstack-导航"><a href="#1-4-案例：webstack-导航" class="headerlink" title="1.4 案例：webstack 导航"></a>1.4 案例：webstack 导航</h3><p><code>webstack</code>是一个纯静态的网址导航网站，内容均由<code>viggo</code>收集并整理。项目基于<code>bootstrap</code>前端框架开发。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://camo.githubusercontent.com/41111c4c1d9922982f380566e6a2f8415204c52c/687474703a2f2f7777772e776562737461636b2e63632f6173736574732f696d616765732f707265766965772e676966" alt="image"></p><ul><li>Github：<a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank" rel="noopener">https://github.com/WebStackPage/WebStackPage.github.io</a></li></ul><p>在博客根目录 <code>source/</code>下新建<code>tools</code>，然后新建<code>index.html</code>,将<code>webstack</code>网页源码全选复制粘贴到里面。</p><ul><li>本站的webstack源码：<a href="view-source:http://rryf.top/tools/" target="_blank" rel="noopener">view-source:http://rryf.top/tools/</a></li></ul><blockquote><p>注意：将源码里的部分信息以及跳转链接按照你真实个人博客的环境进行修改。</p></blockquote><p>然后打开博客根目录下配置文件<code>_config.yml</code>，找到<code>skip_render</code>，做如下修改：</p><pre class="line-numbers language-bash"><code class="language-bash">skip_render:  - <span class="token string">'tools/*'</span>  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后执行<code>hexo clean</code>和<code>hexo s -g</code>本地预览，检查无误后<code>hexo g -d</code>部署到服务器上即可。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul><li><a href="http://luckyzmj.cn/posts/17fd92ae.html" target="_blank" rel="noopener">http://luckyzmj.cn/posts/17fd92ae.html</a></li></ul><p>、</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> BLOG篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 渲染绕过 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>阿里云服务器部署Hexo博客</title>
       <link href="/posts/19d2a4e6.html"/>
       <url>/posts/19d2a4e6.html</url>
@@ -212,33 +264,6 @@
             <tag> 阿里云 </tag>
             
             <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo之渲染绕过</title>
-      <link href="/posts/17fd92ae.html"/>
-      <url>/posts/17fd92ae.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="1-1-Hexo-渲染"><a href="#1-1-Hexo-渲染" class="headerlink" title="1.1 Hexo 渲染"></a>1.1 Hexo 渲染</h3><p>  在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染是非常必要的。</p><h3 id="1-2-方法一：font-matter"><a href="#1-2-方法一：font-matter" class="headerlink" title="1.2 方法一：font matter"></a>1.2 方法一：font matter</h3><p><code>Hexo</code>新建网站页面，然后将你的代码直接写入 <code>index.md</code> 中</p><p>在 <code>Front matter</code> 中添加 <code>layout: false</code>，此方法适用于单一的纯<code>HTML</code><br><code>CSS</code> 页面。</p><pre class="line-numbers language-bash"><code class="language-bash">---title: toolsdate: 2020-04-28 00:00:00type: <span class="token string">"tools"</span>layout: <span class="token boolean">false</span>---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="1-3-方法二：skip-render"><a href="#1-3-方法二：skip-render" class="headerlink" title="1.3 方法二：skip render"></a>1.3 方法二：skip render</h3><p>在博客根目录下的 <code>_config.yml</code>，找到 <code>skip_render</code>，大概在32行左右，写入你想要的跳过渲染的路径，注意缩进和空格。</p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 指定目录跳过hexo渲染</span>skip_render:  - <span class="token string">'tools/*'</span>  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>注释：<code>tools/*</code> 表示在目录 <code>source/fireworks</code> 下的文件全部跳过渲染，<code>tools/**</code> 表示在博客根目录 <code>source/tools/</code> 文件夹下的文件全部跳过渲染（例如页面的 js、css 在另一个文件夹中）。</p></blockquote><h3 id="1-4-案例：webstack-导航"><a href="#1-4-案例：webstack-导航" class="headerlink" title="1.4 案例：webstack 导航"></a>1.4 案例：webstack 导航</h3><p><code>webstack</code>是一个纯静态的网址导航网站，内容均由<code>viggo</code>收集并整理。项目基于<code>bootstrap</code>前端框架开发。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://camo.githubusercontent.com/41111c4c1d9922982f380566e6a2f8415204c52c/687474703a2f2f7777772e776562737461636b2e63632f6173736574732f696d616765732f707265766965772e676966" alt="image"></p><ul><li>Github：<a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank" rel="noopener">https://github.com/WebStackPage/WebStackPage.github.io</a></li></ul><p>在博客根目录 <code>source/</code>下新建<code>tools</code>，然后新建<code>index.html</code>,将<code>webstack</code>网页源码全选复制粘贴到里面。</p><ul><li>本站的webstack源码：<a href="view-source:http://rryf.top/tools/" target="_blank" rel="noopener">view-source:http://rryf.top/tools/</a></li></ul><blockquote><p>注意：将源码里的部分信息以及跳转链接按照你真实个人博客的环境进行修改。</p></blockquote><p>然后打开博客根目录下配置文件<code>_config.yml</code>，找到<code>skip_render</code>，做如下修改：</p><pre class="line-numbers language-bash"><code class="language-bash">skip_render:  - <span class="token string">'tools/*'</span>  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后执行<code>hexo clean</code>和<code>hexo s -g</code>本地预览，检查无误后<code>hexo g -d</code>部署到服务器上即可。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul><li><a href="http://luckyzmj.cn/posts/17fd92ae.html" target="_blank" rel="noopener">http://luckyzmj.cn/posts/17fd92ae.html</a></li></ul><p>、</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> BLOG篇 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 渲染绕过 </tag>
             
         </tags>
       
