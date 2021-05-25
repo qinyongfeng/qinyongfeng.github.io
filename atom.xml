@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.rryf.top/"/>
-  <updated>2021-05-13T01:50:03.802Z</updated>
+  <updated>2021-05-25T02:16:44.986Z</updated>
   <id>http://www.rryf.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo 常用命令</title>
+    <link href="http://www.rryf.top/posts/85537cbc.html"/>
+    <id>http://www.rryf.top/posts/85537cbc.html</id>
+    <published>2021-05-25T01:41:21.000Z</published>
+    <updated>2021-05-25T02:16:44.986Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;好记性不如烂笔头，时间长了实在是记不住，记录到小本本上。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;1、hexo-init&quot;&gt;&lt;a href=&quot;#1、hexo-init&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="博客篇" scheme="http://www.rryf.top/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    
+    
+      <category term="hexo" scheme="http://www.rryf.top/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>并发编程的艺术_4</title>
@@ -79,7 +109,7 @@
     <link href="http://www.rryf.top/posts/96741f70.html"/>
     <id>http://www.rryf.top/posts/96741f70.html</id>
     <published>2021-05-13T01:41:21.000Z</published>
-    <updated>2021-05-13T02:27:28.938Z</updated>
+    <updated>2021-05-25T01:47:49.773Z</updated>
     
     <summary type="html">
     

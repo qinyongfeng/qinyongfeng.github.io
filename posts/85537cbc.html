@@ -5,17 +5,18 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="MoiaControl, RRYF">
+    <meta name="keywords" content="Hexo 常用命令, RRYF">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
     <meta name="google-site-verification" content="pBWoGvVEP36FzzS4xIpoMejc5UKi3RKcxd9rWWcjiDg">
     <meta name="360-site-verification" content="2db45fc772bbd3e7efd0985eec0fff97">
     <meta name="description" content="
-moia 官网：http://www.moia.com.cn/ 
+好记性不如烂笔头，时间长了实在是记不住，记录到小本本上。
 
-调度阶段安装1.1、调度节点安装步骤通过FTP上传文件到安装目录下，解压执行以下命令。
-# 解压方式一
-tar xvf MoiaControl.V5.06.001_Lin">
+
+1、hexo inithexo init 命令用于初始化本地文件夹为网站的根目录
+$ hexo init [folder]
+folder 可选参数，用以指定初始化目录的路径，若">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +25,7 @@ tar xvf MoiaControl.V5.06.001_Lin">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="baidu-site-verification" content="wvlc3L96QK">
-    <title>MoiaControl | RRYF</title>
+    <title>Hexo 常用命令 | RRYF</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/rryf/images/logo/RRYF_logo_t.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -712,7 +713,7 @@ tar xvf MoiaControl.V5.06.001_Lin">
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '1f20f86e966811c8f3da6fc367edda0f378ac31041eb6febf3be98aafc7d500c';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -725,13 +726,13 @@ tar xvf MoiaControl.V5.06.001_Lin">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/rryf/images/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/rryf/images/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        MoiaControl
+                        Hexo 常用命令
                     </div>
                 </div>
             </div>
@@ -851,8 +852,8 @@ tar xvf MoiaControl.V5.06.001_Lin">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MoiaControll/" target="_blank">
-                                <span class="chip bg-color">MoiaControll</span>
+                            <a href="/tags/hexo/" target="_blank">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -863,8 +864,8 @@ tar xvf MoiaControl.V5.06.001_Lin">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/MOIA篇/" class="post-category" target="_blank">
-                                MOIA篇
+                            <a href="/categories/博客篇/" class="post-category" target="_blank">
+                                博客篇
                             </a>
                         
                     </div>
@@ -875,7 +876,7 @@ tar xvf MoiaControl.V5.06.001_Lin">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-22
+                    2021-05-25
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -900,146 +901,48 @@ tar xvf MoiaControl.V5.06.001_Lin">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>moia 官网：<a href="http://www.moia.com.cn/" target="_blank" rel="noopener">http://www.moia.com.cn/</a> </p>
+<p>好记性不如烂笔头，时间长了实在是记不住，记录到小本本上。</p>
 </blockquote>
-<h3 id="调度阶段安装"><a href="#调度阶段安装" class="headerlink" title="调度阶段安装"></a>调度阶段安装</h3><h5 id="1-1、调度节点安装步骤"><a href="#1-1、调度节点安装步骤" class="headerlink" title="1.1、调度节点安装步骤"></a>1.1、调度节点安装步骤</h5><p>通过FTP上传文件到安装目录下，解压执行以下命令。</p>
-<pre class="line-numbers language-Linux"><code class="language-Linux"># 解压方式一
-tar xvf MoiaControl.V5.06.001_Linux64_ORACLE_DATASTAGE.tar
-# 解压方式二
-gzip -d MoiaControl.V5.06.001_Linux64_ORACLE_DATASTAGE.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="1-2、在解压的安装目录下，修改install-srv的配置文件"><a href="#1-2、在解压的安装目录下，修改install-srv的配置文件" class="headerlink" title="1.2、在解压的安装目录下，修改install.srv的配置文件"></a>1.2、在解压的安装目录下，修改install.srv的配置文件</h5><pre class="line-numbers language-Linux"><code class="language-Linux"># 物理阶段IPi地址（不填则自动获取）
-# 机器配置了多IP,则该项必须填写。（多网卡需要配置）
-IPADDR=
-
-# 调度节点数据库oracle/db2 home 目录
-DBHOME=/u01/app/oracle/prduct/11.2.0/dbhome_1
-
-# 填写数据库用户以及密码（安装调度节点时需要填写）
-MOIA_DBS=moia
-MDB_USER=moia
-MDB_PWD=moia
-
-# 安装物理系欸但名字PNODE_NAME，以及各个moia服务需要开通的接口。
-PNODE_NAME=SCHEDUL_NODE
-# 事件服务端口
-EVT_PORT=57501 
-# 命令服务端口
-CMD_PORT=57502 
-
-# ZOOKEEPER安装选项 不使用双活调度节点选择 0
-# 是否使用zookeeper 0-不使用 1-使用已有zookeeper，2本机新
-# 安装双活节点，只能使用已有zookeeper
-# 如果需要使用分布式调度节点，且已经安装zookeeper则选择 1，并填写以下项：
-ZOOKEEPER_SERVER=168.16.5.50:2181,168.16.5.51:2128
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>注:如果是ZOOKEEPER集群，使用逗号分割</p>
-<p>如果需要分布式安装多个调度节点，并且未安装zookeeper，需要在本机自动安</p>
-<p>装选择 2，并填写以下项。该方式安装完成后，仍需要完善zookeeper集群。</p>
-</blockquote>
-<p>配置好install.srv文件后，执行sh install.sh -srv显示配置内容：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210422102642.png" alt="执行后展示内容"></p>
-<p>确认端口等信息无误后输入回车进行安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210422102857.png" alt=""></p>
-<p>这里选择N新安装MoiaControl调度平台，并回车确认你的选择，开始安装新的调度平台。</p>
-<h5 id="2-1、调度分布式安装"><a href="#2-1、调度分布式安装" class="headerlink" title="2.1、调度分布式安装"></a>2.1、调度分布式安装</h5><h5 id="2-2、zookeeper集群安装"><a href="#2-2、zookeeper集群安装" class="headerlink" title="2.2、zookeeper集群安装"></a>2.2、zookeeper集群安装</h5><p>安装第一个调度节点时，若未使用zookeeper，或者新安装zookeeper，在安</p>
-<p>装分布式多调度节点时，必须完善zookeeper集群。</p>
-<blockquote>
-<p>根据官方建议，zookeeper集群最佳个数为 2n+1，根据实际情况自行调整。</p>
-</blockquote>
-<h5 id="2-3、主机名称到IP地址映射配置"><a href="#2-3、主机名称到IP地址映射配置" class="headerlink" title="2.3、主机名称到IP地址映射配置"></a>2.3、主机名称到IP地址映射配置</h5><p>以/etc/hosts中配置的机器为例。</p>
-<pre><code>168.16.5.50 server-1
-168.16.5.51 server-2
-168.16.5.52 server-3</code></pre><h5 id="2-4、修改ZooKeeper配置文件"><a href="#2-4、修改ZooKeeper配置文件" class="headerlink" title="2.4、修改ZooKeeper配置文件"></a>2.4、修改ZooKeeper配置文件</h5><p>解压缩zookeeper-3.4.6.tar.gz， </p>
-<pre><code>tar -zxvf zookeeper-3.4.6.tar.gz</code></pre><p>修改配置文件conf/zoo.cfg，内容如下所示：</p>
-<pre><code>tickTime=2000
-initLimit=10
-syncLimit=5
-dataDir=/opt/zookeeper/data
-clientPort=2181
-maxClientCnxns=200
-autopurge.snapRetainCount=3
-autopurge.purgeInterval=1
-server.1=168.16.5.50:2888:3888
-server.2=168.16.5.51:2888:3888
-server.3=168.16.5.52:2888:3888
-# 三台机器zoo.cfg配置均如此。</code></pre><h5 id="2-4、修改ZooKeeper配置文件-1"><a href="#2-4、修改ZooKeeper配置文件-1" class="headerlink" title="2.4、修改ZooKeeper配置文件"></a>2.4、修改ZooKeeper配置文件</h5><pre><code>168.16.5.50 执行： echo “1” &gt; /opt/zookeeper/data/myid
-168.16.5.51 执行： echo “2” &gt; /opt/zookeeper/data/myid
-168.16.5.52 执行： echo “3” &gt; /opt/zookeeper/data/myid</code></pre><blockquote>
-<p>注意：安装调度节点时，新安装的zookeeper也需要修改zoo.cfg，并且myid也需要对应。并重启zookeeper。</p>
-</blockquote>
-<h5 id="2-5、启动zookeeper"><a href="#2-5、启动zookeeper" class="headerlink" title="2.5、启动zookeeper"></a>2.5、启动zookeeper</h5><pre><code>cd bin
-# 启动
-sh zkServer.sh start
-# 停止
-sh zkServer.sh stop</code></pre><h5 id="2-5、修改调度节点配置"><a href="#2-5、修改调度节点配置" class="headerlink" title="2.5、修改调度节点配置"></a>2.5、修改调度节点配置</h5><pre><code>vim etc/MOIA_ADT.cfg
-# 文件中修改配置项
-G_ZOO_USED=1
-ZOOK_HOST=168.16.5.50:2181，168.16.5.51:2181，168.16.5.52:2181</code></pre><p>并重启调度节点服务。</p>
-<h3 id="执行节点安装"><a href="#执行节点安装" class="headerlink" title="执行节点安装"></a>执行节点安装</h3><h5 id="1-1、执行节点安装步骤"><a href="#1-1、执行节点安装步骤" class="headerlink" title="1.1、执行节点安装步骤"></a>1.1、执行节点安装步骤</h5><p>通过FTP上传文件到安装目录下，解压执行以下命令。</p>
-<pre class="line-numbers language-Linux"><code class="language-Linux"># 解压方式一
-tar xvf MoiaControl.V5.06.001_Linux64_ORACLE_DATASTAGE.tar
-# 解压方式二
-gzip -d MoiaControl.V5.06.001_Linux64_ORACLE_DATASTAGE.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="1-2、在解压的安装目录下，修改install-srv的配置文件-1"><a href="#1-2、在解压的安装目录下，修改install-srv的配置文件-1" class="headerlink" title="1.2、在解压的安装目录下，修改install.srv的配置文件"></a>1.2、在解压的安装目录下，修改install.srv的配置文件</h5><pre class="line-numbers language-Linux"><code class="language-Linux"># 物理阶段IPi地址（不填则自动获取）
-# 机器配置了多IP,则该项必须填写。（多网卡需要配置）
-IPADDR=
-# 执行节点 datastage home目录，没有etl 留空
-DSHOME=
-# 填写调度节点相关信息，用于安装时与调度节点通信
-# 调度节点IP和端口（安装执行节点需填写）
-SRV_IP=192.168.1.250   # 调度节点IP地址
-SRV_POPT=57501           # 调度节点事件端口
-# 填写物理节点名字PNODE_NAME。以及改物理节点上需要开通的各个服务所占
-# 用的端口号。物理节点名不能重复。
-PNODE_NAME=SCHEDUL_NODE 
-CLM_POPT=57505<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="1-2、在解压的安装目录下，修改install-srv的配置文件-2"><a href="#1-2、在解压的安装目录下，修改install-srv的配置文件-2" class="headerlink" title="1.2、在解压的安装目录下，修改install.srv的配置文件"></a>1.2、在解压的安装目录下，修改install.srv的配置文件</h5><pre><code># 执行安装命令
-sh install.sh -agt</code></pre><blockquote>
-<p>注意不可以重复执行</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210422105331.png" alt=""></p>
-<p>确认无误后输入回车进行安装。</p>
-<h5 id="1-3、启动调度节点"><a href="#1-3、启动调度节点" class="headerlink" title="1.3、启动调度节点"></a>1.3、启动调度节点</h5><pre><code># 将env/moia.env作为用户环境变量并激活，才可以执行相关命令。
- source ./setenv
-# 启动服务 
-sh startup.sh 
-# 停止服务
-sh shutdown.sh</code></pre><p>调度节点执行 <code>MSrvAdm -l</code> 进程查看安装是否正常<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210422105627.png" alt=""><br>执行节点执行 <code>lsmt</code> 进程查看安装是否正常</p>
-<h3 id="FileScan-安装、问题排查"><a href="#FileScan-安装、问题排查" class="headerlink" title="FileScan 安装、问题排查"></a>FileScan 安装、问题排查</h3><h5 id="1-1、FileScan安装步骤。"><a href="#1-1、FileScan安装步骤。" class="headerlink" title="1.1、FileScan安装步骤。"></a>1.1、FileScan安装步骤。</h5><p>通过FTP上传文件到安装目录下，解压执行以下命令。</p>
-<pre class="line-numbers language-Linux"><code class="language-Linux">tar -zxvf 程序包<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h5 id="1-2、在解压目录下，修改FileScan的配置文件"><a href="#1-2、在解压目录下，修改FileScan的配置文件" class="headerlink" title="1.2、在解压目录下，修改FileScan的配置文件"></a>1.2、在解压目录下，修改FileScan的配置文件</h5><pre class="line-numbers language-Linux"><code class="language-Linux">vim etc/MOIA_EXT.xml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210422090929.png" alt="MOIA_EXT.xml"></p>
-<blockquote>
-<p>配置项说明</p>
-</blockquote>
-<p><code>scantime</code>：扫描间隔时间</p>
-<p>调度器服务器地址配置（可配置多个，但只会向一个可通信地址发送）：</p>
-<p><code>serverip</code>：调度节点的ip地址</p>
-<p><code>serverport</code>：调度节点命令服务器端口 （默认端口57501）</p>
-<p><strong>dir可配置多个扫描目录</strong>：</p>
-<p><code>path</code>：扫描目录 </p>
-<p><code>type</code>：文件类型。 0 – 标志文件。 1 – 数据文件 </p>
-<p><code>retry</code>：文件扫描次数。用于数据文件落地判断（文件大小不改变的次数）。 </p>
-<p><code>Subdir</code>：是否级联扫描下级目录。0 – 不扫描下级目录。 1 – 扫描下级 目录。</p>
-<p><code>Regex</code>：正则表达式。使用正则表达式匹配扫描到的文件。 </p>
-<p><code>format</code>：使用日期宏[DATE]后替换的时间格式(YYYYMMDD,YYYY-MM-DD等) </p>
-<p><code>befordays</code>：当前日期向前计算几天</p>
-<p><code>afterdays</code>：当前日期向后计算几天 </p>
-<p><strong>dir 实例模板</strong></p>
-<pre><code>&lt;dir&gt;
-    &lt;path&gt;/opt/list/[DATE]/file&lt;\path&gt;
-    &lt;type&gt;0&lt;\type&gt;
-    &lt;retry&gt;3&lt;\retry&gt;
-    &lt;subdir&gt;1&lt;/subdir&gt;
-    &lt;regex&gt;^.*?\.(py|txt)$&lt;/regex&gt;
-    &lt;format&gt;YYYY-MM-DD&lt;\format&gt;
-    &lt;befordays&gt;3&lt;\befordays&gt;
-    &lt;afterdays&gt;4&lt;\afterdays&gt;
-&lt;\dir&gt;</code></pre><h5 id="1-3、服务启停"><a href="#1-3、服务启停" class="headerlink" title="1.3、服务启停"></a>1.3、服务启停</h5><pre><code># 启动
-sh bin/startup.sh 
-# 停止
-sh bin/shutdown.sh</code></pre><script>
+<hr>
+<h3 id="1、hexo-init"><a href="#1、hexo-init" class="headerlink" title="1、hexo init"></a>1、hexo init</h3><p><code>hexo init</code> 命令用于初始化本地文件夹为网站的根目录</p>
+<pre><code>$ hexo init [folder]</code></pre><ul>
+<li><code>folder</code> 可选参数，用以指定初始化目录的路径，若无指定则默认为当前目录<h3 id="2、hexo-new"><a href="#2、hexo-new" class="headerlink" title="2、hexo new"></a>2、hexo new</h3><pre><code>hexo new` 命令用于新建文章，一般可以简写为 `hexo n
+$ hexo new [layout] &lt;title&gt;</code></pre></li>
+<li><code>layout</code> 可选参数，用以指定文章类型，若无指定则默认由配置文件中的 default_layout 选项决定</li>
+<li><code>title</code> 必填参数，用以指定文章标题，如果参数值中含有空格，则需要使用双引号包围<h3 id="3、hexo-generate"><a href="#3、hexo-generate" class="headerlink" title="3、hexo generate"></a>3、hexo generate</h3><pre><code>hexo generate` 命令用于生成静态文件，一般可以简写为 `hexo g
+$ hexo generate</code></pre></li>
+<li><code>-d</code> 选项，指定生成后部署，与 <code>hexo d -g</code> 等价</li>
+</ul>
+<p>详细信息请参考：<a href="https://hexo.io/docs/generating" target="_blank" rel="noopener">https://hexo.io/docs/generating</a></p>
+<h3 id="4、hexo-server"><a href="#4、hexo-server" class="headerlink" title="4、hexo server"></a>4、hexo server</h3><pre><code>hexo server` 命令用于启动本地服务器，一般可以简写为 `hexo s
+$ hexo server</code></pre><ul>
+<li><code>-p</code> 选项，指定服务器端口，默认为 4000</li>
+<li><code>-i</code> 选项，指定服务器 IP 地址，默认为 0.0.0.0</li>
+<li><code>-s</code> 选项，静态模式 ，仅提供 public 文件夹中的文件并禁用文件监视</li>
+</ul>
+<p><strong>说明</strong> ：运行服务器前需要安装 hexo-server 插件</p>
+<pre><code>$ npm install hexo-server --save</code></pre><p>详细信息请参考：<a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">https://hexo.io/docs/server.html</a></p>
+<h3 id="5、hexo-deploy"><a href="#5、hexo-deploy" class="headerlink" title="5、hexo deploy"></a>5、hexo deploy</h3><pre><code>hexo deploy` 命令用于部署网站，一般可以简写为 `hexo d
+$ hexo deploy</code></pre><ul>
+<li><code>-g</code> 选项，指定生成后部署，与 <code>hexo g -d</code> 等价</li>
+</ul>
+<p><strong>说明</strong> ：部署前需要修改 _config.yml 配置文件，下面以 git 为例进行说明</p>
+<pre><code>deploy:
+    type: git
+    repo: &lt;repository url&gt;
+    branch:    master
+    message: 自定义提交消息，默认为Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}</code></pre><p>详细信息请参考：<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></p>
+<h3 id="6、hexo-clean"><a href="#6、hexo-clean" class="headerlink" title="6、hexo clean"></a>6、hexo clean</h3><p><code>hexo clean</code> 命令用于清理缓存文件，是一个比较常用的命令</p>
+<pre><code>$ hexo clean</code></pre><p><strong>网站显示异常时可尝试此操作</strong></p>
+<h3 id="7、Option"><a href="#7、Option" class="headerlink" title="7、Option"></a>7、Option</h3><h4 id="（1）hexo-–safe"><a href="#（1）hexo-–safe" class="headerlink" title="（1）hexo –safe"></a>（1）hexo –safe</h4><p><code>hexo --safe</code> 表示安全模式，用于禁用加载插件和脚本</p>
+<pre><code>$ hexo --safe</code></pre><p><strong>安装新插件时遇到问题可尝试此操作</strong></p>
+<h4 id="（2）hexo-–debug"><a href="#（2）hexo-–debug" class="headerlink" title="（2）hexo –debug"></a>（2）hexo –debug</h4><p><code>hexo --debug</code> 表示调试模式，用于将消息详细记录到终端和 <code>debug.log</code> 文件</p>
+<pre><code>$ hexo --debug</code></pre><h4 id="（3）hexo-–silent"><a href="#（3）hexo-–silent" class="headerlink" title="（3）hexo –silent"></a>（3）hexo –silent</h4><p><code>hexo --silent</code> 表示静默模式，用于静默输出到终端</p>
+<pre><code>$ hexo --silent</code></pre><p>【参考资料】</p>
+<ul>
+<li><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/commands.html</a></li>
+</ul>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1083,7 +986,7 @@ sh bin/shutdown.sh</code></pre><script>
                     </span>
                     <a href="http://www.rryf.top" class="b-link-green">RRYF</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/posts/53ce78a.html" class="b-link-green">MoiaControl</a>
+                    <a href="/posts/85537cbc.html" class="b-link-green">Hexo 常用命令</a>
                 </p>
             </div>
 
@@ -1435,50 +1338,48 @@ sh bin/shutdown.sh</code></pre><script>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/8108ad3.html">
+                <a href="/posts/85537cbc.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/rryf/images/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/08.jpg" class="responsive-img" alt="并发编程的艺术_3">
+                        <img src="https://cdn.jsdelivr.net/gh/rryf/images/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/13.jpg" class="responsive-img" alt="Hexo 常用命令">
                         
-                        <span class="card-title">并发编程的艺术_3</span>
+                        <span class="card-title">Hexo 常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java内存模型，也是面试中经常提到的,本篇内容为重点，打好基础，请仔细观看，避免跳层。
+                            Hexo 的一些常用指令。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-04-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-05-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/并发篇/" class="post-category" target="_blank">
-                                    并发篇
+                            <a href="/categories/博客篇/" class="post-category" target="_blank">
+                                    博客篇
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/并发编程/" target="_blank">
-                        <span class="chip bg-color">并发编程</span>
-                    </a>
-                    
-                    <a href="/tags/java/" target="_blank">
-                        <span class="chip bg-color">java</span>
+                    <a href="/tags/hexo/" target="_blank">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1492,24 +1393,24 @@ sh bin/shutdown.sh</code></pre><script>
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/7f17ba45.html">
+                <a href="/posts/96741f70.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/rryf/images/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/07.jpg" class="responsive-img" alt="并发编程的艺术_2">
+                        <img src="https://cdn.jsdelivr.net/gh/rryf/images/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/11.jpg" class="responsive-img" alt="并发编程的艺术_4">
                         
-                        <span class="card-title">并发编程的艺术_2</span>
+                        <span class="card-title">并发编程的艺术_4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java并发机制的底层实现原理，volatile和synchronized详解，也是面试中经常提到的,本篇内容为重点，打好基础，请仔细观看，避免跳层。
+                            之前可能忽略了一些刚接触这个行业的朋友，这里补充一下线程相关内容。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-04-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-05-13
                             </span>
                         <span class="publish-author">
                             
