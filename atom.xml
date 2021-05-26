@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.rryf.top/"/>
-  <updated>2021-05-25T02:22:18.752Z</updated>
+  <updated>2021-05-26T06:10:45.933Z</updated>
   <id>http://www.rryf.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>服务器直接文件传输</title>
+    <link href="http://www.rryf.top/posts/1280204d.html"/>
+    <id>http://www.rryf.top/posts/1280204d.html</id>
+    <published>2021-05-25T16:00:00.000Z</published>
+    <updated>2021-05-26T06:10:45.933Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;需求分析：今天有人提了这么一个问题，就是在两个服务器进行文件传递，在问过没有什么特殊需求之后提供如下demo。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&quot;文件传输1-FTP&quot;&gt;&lt;a href=&quot;#文件传输1-FTP&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="需求篇" scheme="http://www.rryf.top/categories/%E9%9C%80%E6%B1%82%E7%AF%87/"/>
+    
+    
+      <category term="demand" scheme="http://www.rryf.top/tags/demand/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo 常用命令</title>
     <link href="http://www.rryf.top/posts/85537cbc.html"/>
     <id>http://www.rryf.top/posts/85537cbc.html</id>
     <published>2021-05-25T01:41:21.000Z</published>
-    <updated>2021-05-25T02:22:18.752Z</updated>
+    <updated>2021-05-25T02:25:00.672Z</updated>
     
     <summary type="html">
     
@@ -43,6 +72,37 @@
     
     
       <category term="hexo" scheme="http://www.rryf.top/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>照片信息经纬度查询</title>
+    <link href="http://www.rryf.top/posts/6942c10d.html"/>
+    <id>http://www.rryf.top/posts/6942c10d.html</id>
+    <published>2021-05-23T16:00:00.000Z</published>
+    <updated>2021-05-26T06:12:54.207Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;需求分析：今天碰到一个小朋友，想查看女朋友的照片拍摄位置是不是和她所诉说的一致 ^_^&lt;/p&gt;
+&lt;p&gt;在实现之前先了解一些小知识。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;什么是Exif-什么又是元数据&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="需求篇" scheme="http://www.rryf.top/categories/%E9%9C%80%E6%B1%82%E7%AF%87/"/>
+    
+    
+      <category term="demand" scheme="http://www.rryf.top/tags/demand/"/>
     
   </entry>
   
