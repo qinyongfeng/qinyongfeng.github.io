@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.rryf.top/"/>
-  <updated>2021-05-26T06:10:45.933Z</updated>
+  <updated>2021-06-28T02:38:46.959Z</updated>
   <id>http://www.rryf.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件设计师—计算机基础知识</title>
+    <link href="http://www.rryf.top/posts/12d3b523.html"/>
+    <id>http://www.rryf.top/posts/12d3b523.html</id>
+    <published>2021-06-15T01:58:21.000Z</published>
+    <updated>2021-06-28T02:38:46.959Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;计算机基础知识&quot;&gt;&lt;a href=&quot;#计算机基础知识&quot; class=&quot;headerlink&quot; title=&quot;计算机基础知识&quot;&gt;&lt;/a&gt;计算机基础知识&lt;/h2&gt;&lt;p&gt;1、计算机基础&lt;/p&gt;
+&lt;p&gt;1.1、冯诺依曼计算机&lt;/p&gt;
+&lt;script&gt;
+       
+        
+      
+    
+    </summary>
+    
+      <category term="证书篇" scheme="http://www.rryf.top/categories/%E8%AF%81%E4%B9%A6%E7%AF%87/"/>
+    
+    
+      <category term="软件设计师" scheme="http://www.rryf.top/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+  </entry>
   
   <entry>
     <title>服务器直接文件传输</title>
@@ -320,7 +349,7 @@
     <link href="http://www.rryf.top/posts/498cfd8e.html"/>
     <id>http://www.rryf.top/posts/498cfd8e.html</id>
     <published>2021-04-20T01:58:21.000Z</published>
-    <updated>2021-04-20T05:42:40.554Z</updated>
+    <updated>2021-06-08T01:42:21.934Z</updated>
     
     <summary type="html">
     
@@ -426,6 +455,33 @@
       <category term="PicGo" scheme="http://www.rryf.top/tags/PicGo/"/>
     
       <category term="GitHub图床" scheme="http://www.rryf.top/tags/GitHub%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML更换自定义字体</title>
+    <link href="http://www.rryf.top/posts/e6cad2cc.html"/>
+    <id>http://www.rryf.top/posts/e6cad2cc.html</id>
+    <published>2019-05-25T16:00:00.000Z</published>
+    <updated>2021-06-28T03:00:53.462Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1、字体下载&quot;&gt;&lt;a href=&quot;#1、字体下载&quot; class=&quot;headerlink&quot; title=&quot;1、字体下载&quot;&gt;&lt;/a&gt;1、字体下载&lt;/h4&gt;&lt;p&gt;下载你所需要使用字体，字体后缀为&lt;code&gt;ttf&lt;/code&gt;。&lt;/p&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="前端篇" scheme="http://www.rryf.top/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/"/>
+    
+    
+      <category term="html" scheme="http://www.rryf.top/tags/html/"/>
     
   </entry>
   

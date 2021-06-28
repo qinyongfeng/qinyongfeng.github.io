@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>软件设计师—计算机基础知识</title>
+      <link href="/posts/12d3b523.html"/>
+      <url>/posts/12d3b523.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="计算机基础知识"><a href="#计算机基础知识" class="headerlink" title="计算机基础知识"></a>计算机基础知识</h2><p>1、计算机基础</p><p>1.1、冯诺依曼计算机</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 证书篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件设计师 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>服务器直接文件传输</title>
       <link href="/posts/1280204d.html"/>
       <url>/posts/1280204d.html</url>
@@ -366,6 +391,31 @@
             <tag> PicGo </tag>
             
             <tag> GitHub图床 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML更换自定义字体</title>
+      <link href="/posts/e6cad2cc.html"/>
+      <url>/posts/e6cad2cc.html</url>
+      
+        <content type="html"><![CDATA[<h4 id="1、字体下载"><a href="#1、字体下载" class="headerlink" title="1、字体下载"></a>1、字体下载</h4><p>下载你所需要使用字体，字体后缀为<code>ttf</code>。</p><h4 id="2、生成兼容其他系统的字体。"><a href="#2、生成兼容其他系统的字体。" class="headerlink" title="2、生成兼容其他系统的字体。"></a>2、生成兼容其他系统的字体。</h4><p><a href="https://www.fontke.com/tool/fontface/" target="_blank" rel="noopener">在线Webfont字体生成工具</a> </p><p>将下载的ttf文件拖入，生成各种版本的字体，以及css引用字体格式。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/rryf/images/posts/20210628101424.png" alt="在线Webfont字体生成"></p><h4 id="3、新建font-css，并填加如下代码。"><a href="#3、新建font-css，并填加如下代码。" class="headerlink" title="3、新建font.css，并填加如下代码。"></a>3、新建font.css，并填加如下代码。</h4><pre class="line-numbers language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Fontke"</span><span class="token punctuation">;</span>  <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url("Fontke.woff2")</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"woff2"</span><span class="token punctuation">)</span>,       <span class="token url">url("Fontke.woff")</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"woff"</span><span class="token punctuation">)</span>,       <span class="token url">url("Fontke.ttf")</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"truetype"</span><span class="token punctuation">)</span>,       <span class="token url">url("Fontke.eot")</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"embedded-opentype"</span><span class="token punctuation">)</span>,       <span class="token url">url("Fontke.svg")</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"svg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>url 引用字体文件的位置必须要正确，不然不生效。</p></blockquote><h4 id="4、在你需要的位置，直接引用，也可以设置为全局。"><a href="#4、在你需要的位置，直接引用，也可以设置为全局。" class="headerlink" title="4、在你需要的位置，直接引用，也可以设置为全局。"></a>4、在你需要的位置，直接引用，也可以设置为全局。</h4><pre class="line-numbers language-css"><code class="language-css"><span class="token property">font-family</span><span class="token punctuation">:</span> Fontke<span class="token punctuation">;</span><span class="token comment" spellcheck="true">/* 引用格式 */</span><span class="token property">font-family</span><span class="token punctuation">:</span> Fontke <span class="token important">!important</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">/* 提升指定样式规则的应用优先权。 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p><code>Fontke</code>为你自定义的字体名称,不生效可以尝试使用 !important 优先执行，不然可能存在被其他字体覆盖。</p></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
             
         </tags>
       
