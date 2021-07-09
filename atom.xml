@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.rryf.top/"/>
-  <updated>2021-06-28T02:38:46.959Z</updated>
+  <updated>2021-05-26T06:10:45.933Z</updated>
   <id>http://www.rryf.top/</id>
   
   <author>
@@ -15,35 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>软件设计师—计算机基础知识</title>
-    <link href="http://www.rryf.top/posts/12d3b523.html"/>
-    <id>http://www.rryf.top/posts/12d3b523.html</id>
-    <published>2021-06-15T01:58:21.000Z</published>
-    <updated>2021-06-28T02:38:46.959Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;计算机基础知识&quot;&gt;&lt;a href=&quot;#计算机基础知识&quot; class=&quot;headerlink&quot; title=&quot;计算机基础知识&quot;&gt;&lt;/a&gt;计算机基础知识&lt;/h2&gt;&lt;p&gt;1、计算机基础&lt;/p&gt;
-&lt;p&gt;1.1、冯诺依曼计算机&lt;/p&gt;
-&lt;script&gt;
-       
-        
-      
-    
-    </summary>
-    
-      <category term="证书篇" scheme="http://www.rryf.top/categories/%E8%AF%81%E4%B9%A6%E7%AF%87/"/>
-    
-    
-      <category term="软件设计师" scheme="http://www.rryf.top/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-  </entry>
   
   <entry>
     <title>服务器直接文件传输</title>
@@ -482,6 +453,33 @@
     
     
       <category term="html" scheme="http://www.rryf.top/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>poi 之 HSSFWorkbook 转化 byte[] 小坑记录</title>
+    <link href="http://www.rryf.top/posts/32d603ff.html"/>
+    <id>http://www.rryf.top/posts/32d603ff.html</id>
+    <published>2018-08-30T01:41:21.000Z</published>
+    <updated>2021-07-09T06:20:05.055Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、错误的转化方式，直接使用&lt;code&gt;HSSFWorkbook&lt;/code&gt;提供的 .getBytes()，&lt;/p&gt;
+&lt;p&gt; 查阅资料地址：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="工具篇" scheme="http://www.rryf.top/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/"/>
+    
+    
+      <category term="google" scheme="http://www.rryf.top/tags/google/"/>
     
   </entry>
   

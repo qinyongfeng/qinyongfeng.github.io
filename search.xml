@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>软件设计师—计算机基础知识</title>
-      <link href="/posts/12d3b523.html"/>
-      <url>/posts/12d3b523.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="计算机基础知识"><a href="#计算机基础知识" class="headerlink" title="计算机基础知识"></a>计算机基础知识</h2><p>1、计算机基础</p><p>1.1、冯诺依曼计算机</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 证书篇 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 软件设计师 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>服务器直接文件传输</title>
       <link href="/posts/1280204d.html"/>
       <url>/posts/1280204d.html</url>
@@ -416,6 +391,31 @@
         <tags>
             
             <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>poi 之 HSSFWorkbook 转化 byte[] 小坑记录</title>
+      <link href="/posts/32d603ff.html"/>
+      <url>/posts/32d603ff.html</url>
+      
+        <content type="html"><![CDATA[<p>1、错误的转化方式，直接使用<code>HSSFWorkbook</code>提供的 .getBytes()，</p><p> 查阅资料地址：<a href="http://poi.apache.org/apidocs/org/apache/poi/hssf/usermodel/HSSFWorkbook.html#getBytes()" target="_blank" rel="noopener"><code>HSSFWorkbook API</code></a> </p><pre class="line-numbers language-java"><code class="language-java">    <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bytes <span class="token operator">=</span> workbook<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>查看资料发现 构建返回的byte[] 不是一个完整的Excel文件所需的所有数据，生成的文件会导致excel告警，可能部分版本无法打开文件。</p></blockquote><p>2、正确的转换方式</p><pre class="line-numbers language-java"><code class="language-java">ByteArrayOutputStream bos <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ByteArrayOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">try</span> <span class="token punctuation">{</span>    workbook<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>bos<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>    bos<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bytes <span class="token operator">=</span> bos<span class="token punctuation">.</span><span class="token function">toByteArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>对此而言，<code>close</code>实际上并不需要该调用<code>ByteArrayOutputStream</code>，但是，恕我直言，无论如何将其包括在内都是很好的样式，以防以后将其更改为其他类型的流。</p></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> google </tag>
             
         </tags>
       
